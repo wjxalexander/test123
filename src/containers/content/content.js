@@ -16,12 +16,10 @@ class ContentContainer extends Component{
           );
           
         return (
-        <Router>
-        <div>
-              <Route exact path="/home" component={Home} />
-              <Route path="/mail" component={About} />
-            </div>
-          </Router>)
+        <div className='ContentContainer'>
+          {this.props.children}
+        </div>
+      )
     }
 }
 export default ContentContainer

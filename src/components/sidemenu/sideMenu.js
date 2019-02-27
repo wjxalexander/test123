@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Menu, Icon} from 'antd';
 import style from "./sider.css"
-import { BrowserRouter as Router, Route, Link,withRouter,NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link,withRouter,NavLink, HashRouter} from "react-router-dom";
 
 const SubMenu = Menu.SubMenu;
 
@@ -27,7 +27,6 @@ class Sider extends React.Component {
       return (
       <div className="sidemenu-container">
         <h2 className='sidemenu-title'>你好</h2>
-        <Router>
         <Menu
           theme='dark'
           onClick={this.handleClick}
@@ -51,7 +50,6 @@ class Sider extends React.Component {
             <Link to="/desktop">Option 3</Link>
           </Menu.Item>
         </Menu>
-        </Router>
       </div>
     );
   }

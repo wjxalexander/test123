@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link, } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, HashRouter,withRouter} from "react-router-dom";
 import Routes from './routes'
 
 import Sider from './components/sidemenu/sideMenu'
@@ -21,8 +21,9 @@ class App extends Component {
         <div className="right-pannel">
           <Topbar />
           <div className='App-reight-pannel-children'>
-            <Routes/>
-            <div>123</div>
+          <ContentContainer>
+             <Routes/>
+          </ContentContainer>
           </div>
         </div>
       </div>
