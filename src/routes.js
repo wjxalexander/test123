@@ -5,7 +5,7 @@ import Home from "./components/home/home"
 
 const routes = ()=>(
     <Router>
-            <Route path = "/main" 
+            <Route path = "/" 
             component={props=>(
                 <App{...props}>
                 <Route path='/home' component={Home}/>

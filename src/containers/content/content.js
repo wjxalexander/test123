@@ -18,8 +18,8 @@ class ContentContainer extends Component{
         return (
         <Router>
         <div>
-              <Route exact path="main/Home" component={Home} />
-              <Route path="main/mail" component={About} />
+              <Route exact path="/home" component={Home} />
+              <Route path="/mail" component={About} />
             </div>
           </Router>)
     }

@@ -12,7 +12,7 @@ class App extends Component {
           <Sider width='256'/>
         <div className="right-pannel">
           <Topbar />
-          <ContentContainer/>
+          <div className='App-reight-pannel-children'>{this.props.children}</div>
         </div>
       </div>
     );
