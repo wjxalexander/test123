@@ -1,0 +1,10 @@
+.sidemenu-container{
+    width:256px;
+    background: #001529;
+    color: #fff;
+    height: 100vh;
+    margin: 0
+}
+.sidemenu-title{
+    color: white;
+}
