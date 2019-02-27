@@ -2,17 +2,14 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Link,withRouter,NavLink,Switch,HashRouter } from "react-router-dom";
 import App from './App'
 import Home from "./components/home/home"
+import Mail from "./components/mail/mail"
+import Desktop from "./components/dektop/desktop"
 
-const routes = ()=>(
-    <Router>
-            <Route path = "/" 
-            component={props=>(
-                <App{...props}>
-                <Route path='/home' component={Home}/>
-                <Route path='/mail' component={Home}/>
-                <Route path='/pie' component={Home}/>
-                </App>
-            )}/>
-    </Router>
+const Routes = ()=>(
+    <Switch>
+      <Route path='/mail' component={Mail}/>
+      <Route path="/desktop" component={Desktop} />
+      <Route component={Home} />
+    </Switch>
 )
-export default routes
+export default Routes
