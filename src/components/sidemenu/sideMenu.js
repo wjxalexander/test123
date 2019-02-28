@@ -37,13 +37,13 @@ class Sider extends React.Component {
         
           <Menu.Item key="1">
             <Icon type="mail" />
-            <span>Option 1</span>
-            <Link to="/home">Option 1</Link>
+            <span>数据统计</span>
+            <Link to="/home"/>
           </Menu.Item>
           <Menu.Item key="2">
             <Icon type="pie-chart" />
-            <span>Option 2</span>
-            <Link to="/mail">Option 2</Link>
+            <span>数据统计</span>
+            <Link to="/mail"/>
           </Menu.Item><Menu.Item key="3">
             <Icon type="desktop" />
             <span>Option 3</span>

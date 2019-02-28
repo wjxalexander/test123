@@ -16,7 +16,7 @@ class ContentContainer extends Component{
           );
           
         return (
-        <div className='ContentContainer'>
+        <div className='content-container'>
           {this.props.children}
         </div>
       )

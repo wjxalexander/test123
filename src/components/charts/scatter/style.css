@@ -1,0 +1,16 @@
+.hello{
+    background: transparent;
+    position:relative;
+    animation:wave 3s infinite
+}
+@keyframes wave {
+	0% {
+        top: 10px;
+      }
+      50% {
+        top: 20px;
+      }
+      100% {
+        top: 10px;
+      }
+}
